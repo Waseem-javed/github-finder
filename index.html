@@ -6,12 +6,14 @@
     <!-- bootstrap watch cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/pulse/bootstrap.min.css" integrity="sha384-t87SWLASAVDfD3SOypT7WDQZv9X6r0mq1lMEc6m1/+tAVfCXosegm1BvaIiQm3zB" crossorigin="anonymous">   
     <style>
+        
         .searchContainer{
             height: 100%;
         }
         body{
             background: linear-gradient(to bottom, #5d31a081 ,#1d0541);
             background-repeat: no-repeat;
+            height: 100%;
         }
         .search-box{
             color: aliceblue;
@@ -22,25 +24,26 @@
     </style>
 </head>
 <body onload="alert('For this project you must should be register for api after that it will work to fix api key in github js file')">
-    <!-- top simple navbar  -->
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-3 shadow" id="navbar-top">
-        <div class="container">
-            <a href="#" class="navbar-brand text-white font-weight-bold ">Github Finder</a>
-        </div>
-    </nav>
-
-    <!-- body -->
-    <div class="container searchContainer">
-        <div class="search card card-body search-box">
-            <h1 class="display-5">Search Github Users</h1>
-            <p class="lead">Enter a username to fetch a user profile and repo </p>
-            <div class="form-group">
-                <input type="text" id="searchUser" class="form-control form-control-lg" placeholder="Github User...">
+        <!-- top simple navbar  -->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-3 shadow" id="navbar-top">
+            <div class="container">
+                <a href="#" class="navbar-brand text-white font-weight-bold ">Github Finder</a>
             </div>
+        </nav>
+
+        <!-- body -->
+        <div class="container searchContainer h-100">
+            <div class="search card card-body search-box ">
+                <h1 class="display-5">Search Github Users</h1>
+                <p class="lead">Enter a username to fetch a user profile and repo </p>
+                <div class="form-group">
+                    <input type="text" id="searchUser" class="form-control rounded form-control-lg" placeholder="Github User...">
+                </div>
+            </div>
+            <br>
+            <div id="profile"></div>
         </div>
-        <br>
-        <div id="profile"></div>
-    </div>
+    
 
     <!-- footer section -->
     <div class="card text-center text-white p-3 bg-primary">

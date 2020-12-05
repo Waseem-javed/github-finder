@@ -26,7 +26,7 @@ class UI {
                     </div>
                 </div>
             </div>
-            <h3 class="page-heading mb-3">Latest Repo</h3>
+            <h3 class="page-heading mb-3 text-white">Latest Repo</h3>
             <div id="repo"></div>
         `;
 	}
@@ -67,7 +67,7 @@ class UI {
 		this.clearAlert();
 		// create a alert container below code for that
 		const div = document.createElement("div");
-		div.className = `${type}`;
+		div.className = `${type} rounded`;
 		// below line will add child node
 		div.appendChild(document.createTextNode(msg));
 
